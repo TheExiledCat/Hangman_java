@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -53,7 +54,7 @@ public class Hangman {
 
         //Loop that checks if guessed letter is right and replaces dashes with the right letter
         while (life>0){
-            char x=s.next().charAt(0);
+            char x=s.next().toLowerCase().charAt(0);
 
             //if letter already used
             if(l.contains(x)){
@@ -95,7 +96,8 @@ public class Hangman {
     }
     public static void main (String[] args){
 
-            System.out.println("Welcome to hangman, How to play: to start the game type in:");
+
+        System.out.println("Welcome to hangman, How to play: to start the game type in:");
         System.out.println("'run', then the game starts. you can then one letter at a time guess the word by typing. Typing 'quit' will end the game.");
 
 
